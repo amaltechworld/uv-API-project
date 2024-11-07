@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>uv API</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container1">
+            <section id="data">
+                <% if (locals.data) {%>
+                <h6>The current UV index: <%= data.result.uv %></h6>
+                <br />
+                <h6>The time at which the UV index was recorded: <%= data.result.uv_time %></h6>
+                <br />
+                <h6>The maximum UV index recorded: <%= data.result.uv_max %></h6>
+                <br />
+                <h6>
+                    The time at which the maximum UV index was recorded: <%= data.result.uv_max_time
+                    %>
+                </h6>
+                <% } %>
+            </section>
+        </div>
+
+        <div class="container2 float">
+            <h1 class="glitter">UV Protector</h1>
+        </div>
+
+        <div class="container3 float">
+            <form id="formAddress" method="post" action="/submit">
+                <h4>Enter your location's</h4>
+                <label for="address">  Latitude: </label>
+                <input type="text" id="address" class="latitude" name="latitude" /> <br />
+                <label for="address"> Longitude: </label>
+                <input type="text" id="address" name="longitude" /> <br />
+                <button id="getLocationBtn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!--jQuery link-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--js link-->
+        <script src="/script.js"></script>
+    </body>
+</html>

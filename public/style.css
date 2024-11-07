@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: skyblue;
+}
+
+.container1 {
+    border-radius: 50%;
+    background: linear-gradient(to right, yellow, orange, red);
+    height: 700px;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    float: left;
+}
+
+#data {
+    display: flexbox;
+    text-align: center;
+    margin-left: 100px;
+}
+
+#data h6 {
+    padding: 0;
+    margin: 10px;
+}
+
+.container2 {
+    height: 200px;
+    width: 300px;
+}
+
+.float {
+    float: right;
+}
+
+.container2 .glitter {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    animation: glitter 1s infinite;
+    padding: 20px;
+}
+
+@keyframes glitter {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de,
+            0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #ff00de,
+            0 0 80px #ff00de, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff;
+    }
+}
+
+.container3 {
+    padding: 20px;
+    clear: right;
+}
+
+.container3 #address {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.container3 .latitude {
+    margin-left: 15px;
+}
+
+.container3 button {
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, yellow, orange, red);
+}
+
+
